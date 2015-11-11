@@ -1,8 +1,8 @@
-# Tangram Traditional Style
+# Tangram Traditional Style (No Labels)
 
 Give OpenStreetMap data a traditional look using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [vector tiles](https://mapzen.com/projects/vector-tiles/). Please use this open source scene file in your own projects!
 
-Live demo: http://tangrams.github.io/traditional-style
+Live demo: http://tangrams.github.io/traditional-style-no-labels
 
 ![tangram traditional style](https://cloud.githubusercontent.com/assets/853051/11080646/c7c6fd26-87ca-11e5-8a04-7316d8721fc4.png)
 
