@@ -1,4 +1,4 @@
-# Tangram Cinnabar Style (No Labels)
+# Tangram Cinnabar Style
 
 **Cinnabar** is a classic look and should be your go-to for general mapping applications. Give [OpenStreetMap](http://www.openstreetmap.org/) data a refined basemap skin using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [Vector Tiles](https://mapzen.com/projects/vector-tiles/). 
 
@@ -10,21 +10,21 @@ This style is a High Road influenced evolution of the [Traditional](http://tangr
 
 Mapzen offers the Cinnabar style in three flavors:
 
-2. **[Default](https://github.com/tangrams/cinnabar-style)** - Some labels for streets, cities, water bodies, and some big parks with name only (no icons). No business labels. Good for data visualization overlays that need to provide some location context.
+2. **Default** (this repo) - Some labels for streets, cities, water bodies, and some big parks with name only (no icons). No business labels. Good for data visualization overlays that need to provide some location context.
 1. **[More labels](https://github.com/tangrams/cinnabar-style-more-labels)** - Full set of labels, including high contrast icons highlighting OpenStreetMap business listing data.
-3. **No labels** (this repo) - Just the lines and polygons, please. 
+3. **[No labels](https://github.com/tangrams/cinnabar-style-no-labels)** - Just the lines and polygons, please. 
 
 **Looking for a different style?** We offer a range of styles including [Refill](https://github.com/tangrams/refill) (high contrast black & white cartography) and [Zinc](https://github.com/tangrams/zinc-style) (soft gray cartography). 
 
 
-**Live Cinnabar demo:** http://tangrams.github.io/cinnabar-style-no-labels
+**Live Cinnabar demo:** http://tangrams.github.io/cinnabar-style
 
-![tangram cinnabar style](https://cloud.githubusercontent.com/assets/853051/11084428/f5c7567e-87ef-11e5-95cd-a4ae66e52f8c.png)
+![tangram cinnabar style](https://cloud.githubusercontent.com/assets/853051/11084429/f615a860-87ef-11e5-8ca9-6c46cec3534b.png)
 
 
 ## Developer resources
 
-**So how do you actually use this stuff?** Tangram styles are called "scenes" and are written in YAML. The scene file (e.g.: [cinnabar-style.yaml](https://github.com/tangrams/cinnabar-style-no-labels/blob/gh-pages/cinnabar-style-no-labels.yaml)) requires a vector tile source. To use Mapzen's vector tile service you must first obtain a free developer API key and update your scene file with that key. 
+**So how do you actually use this stuff?** Tangram styles are called "scenes" and are written in YAML. The scene file (e.g.: [cinnabar-style.yaml](https://github.com/tangrams/cinnabar-style/blob/gh-pages/cinnabar-style.yaml)) requires a vector tile source. To use Mapzen's vector tile service you must first obtain a free developer API key and update your scene file with that key. 
 
 ### Sign up for a Mapzen Vector Tiles API key
 
@@ -39,16 +39,16 @@ Mapzen offers the Cinnabar style in three flavors:
 
 Using Tangram and Mapzen's Vector tiles inside the popular [Leaflet](http://leafletjs.com) mapping framework is easy. We'll make it even easier soon to do this via a Leaflet [provider](https://github.com/leaflet-extras/leaflet-providers), but in the meantime...
 
-1. Update your copy of the scene file on [line 453](https://github.com/tangrams/cinnabar-style-no-labels/blob/gh-pages/cinnabar-style-no-labels.yaml#L453) to reference the API key you created in Step 3 in the **Sign up** section above. 
+1. Update your copy of the scene file on [line 453](https://github.com/tangrams/cinnabar-style/blob/gh-pages/cinnabar-style.yaml#L453) to reference the API key you created in Step 3 in the **Sign up** section above. 
 `url:  //vector.mapzen.com/osm/all/{z}/{x}/{y}.topojson?api_key=vector-tiles-{your-api-key-here}`
-2. Reference the [index-demo.html](index-demo.html) file in any of the style repos for how to configure Leaflet with Tangram and the scene file (e.g.: [Cinnabar](http://github.com/tangrams/cinnabar-style-no-labels)). 
+2. Reference the [index-demo.html](index-demo.html) file in any of the style repos for how to configure Leaflet with Tangram and the scene file (e.g.: [Cinnabar](http://github.com/tangrams/cinnabar-style)). 
 3. Looking for a more sophisticated implementation that includes basic search? The main [index.html](index.html) file has a more real world example.
 4. Need help testing your map locally? See the README in each repo.
 5. Wondering where to host your map? Make a public repo on Github (or fork ours!) and enjoy their [GitHub Pages](https://pages.github.com) to github.io magic dance.
 
 ### Tangram resources
 
-1. [Procedural Cartography with Tangram](https://github.com/mapzen/presentations/tree/master/08-2015-JSGEO) Patricio's presentation notes from [JS.Geo](http://www.jsgeo.com) metope last month.
+1. [Procedural Cartography with Tangram](https://github.com/mapzen/presentations/tree/master/08-2015-JSGEO) Patricio's presentation notes from [JS.Geo](http://www.jsgeo.com) metope in August 2015.
 2. [Walkthrough: Make a map with Tangram](https://mapzen.com/documentation/tangram/walkthrough/) by Rhonda on Mapzen's documentation team.
 
 ### To run locally
